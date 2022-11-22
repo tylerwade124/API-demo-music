@@ -14,13 +14,15 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'album_id',
         as: 'album',
         onDelete: 'CASCADE',
-        onUpdate: 'CASCADE'
+        onUpdate: 'CASCADE',
+        createdAt: new Date()
       })
       Artist.hasMany(models.Songs, {
         foreignKey: 'song_id',
         as: 'song',
         onDelete: 'CASCADE',
-        onUpdate: 'CASCADE'
+        onUpdate: 'CASCADE',
+        createdAt: new Date()
       })
     }
   }
