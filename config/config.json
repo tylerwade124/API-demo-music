@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "postgres",
-    "password": "mtw001214",
+    "password": "",
     "database": "API_demo_music",
     "host": "127.0.0.1",
     "dialect": "postgres"
